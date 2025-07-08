@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMAN</title>
+
+    <!-- ------------------------------------------------------------------------------------------------------------------- -->
+        <!-- Necesario para que se comunique con el css -->
+    <link rel="stylesheet" href="./assets/images/style.css">
+
+    <!-- ------------------------------------------------------------------------------------------------------------------- -->
+        <!-- Declaramos Booststrap v5.3.7 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+
+
+    <!-- ------------------------------------------------------------------------------------------------------------------- -->
+    <!-- Google Fonts -->    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Kaushan+Script&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- ------------------------------------------------------------------------------------------------------------------- -->
+    <!-- Se ha elegido utilizar la Navegación con Botstrap-->                                                                                                                                                                                                                                                                                                                                                                                                                                         
+    <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#home">SIMAN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#promociones">Promociones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#subscripcion">Suscripción</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+        <!-- ------------------------------------------------------------------------------------------------------------------- -->
+    <!-- Hero ó Sección primcipal con video -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+                    <h1 class="mb-3">Ofertas Exclusivas, sólo en Siman</h1>
+                    <p class="lead">Un lugar donde encontraras las mejores promociones en moda, hogar y tecnología. Ofertas más esperadas del año, no te lo pierdas, puede que no se vuelva a repetir.</p>
+                    <a href="#promociones" class="btn cta-button mt-4" id="btnboton">Ver Promociones</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ratio ratio-16x9 rounded overflow-hidden shadow">
+                        <video autoplay muted loop playsinline class="w-100 h-100 object-fit-cover">
+                            <source src="./assets/video/promocional.mp4" type="video/mp4">
+                            Tu navegador no soporta este video HTML5.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- ------------------------------------------------------------------------------------------------------------------- -->
+        <!-- Llamado de Atención a oferta -->
+    <div class="atencion_banner">
+        <div class="atencion_contenido">
+            <div class="atencion_icono">🔥</div>
+            <div class="atencion_texto">¡Oferta Limitada!</div>
+            <div class="atencion_contador" id="countdown">
+                ⏰ Termina en: <span id="timer">23:59:45</span>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- ------------------------------------------------------------------------------------------------------------------- -->
+    <!-- Promociones con Bootstrap-->
+    <section id="promociones" class="py-5" style="background-color: var(--light-color);">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2>Promociones Destacadas</h2>
+            <p>No te pierdas nuestras ofertas especiales con descuentos irresistibles.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body text-center">
+                        <img src="./assets/images/96301446ce17859b142097eb0aa87e81_1024_1024.webp" alt="Moda Femenina" class="img-fluid rounded mb-3" style="max-height: 240px; object-fit: contain;">
+                        <h5 class="card-title">Moda Femenina</h5>
+                        <p class="card-text">60% OFF en vestidos, blusas y accesorios. Nunca habia sido tan accesible para que seas la envidia de tus amigas</p>
+                        <button class="btn btn-danger">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body text-center">
+                        <img src="./assets/images/49b53787d620630fd56208b3f65fab31_1024_1024.webp" alt="Moda Masculina" class="img-fluid rounded mb-3" style="max-height: 240px; object-fit: contain;">
+                        <h5 class="card-title">Moda Masculina</h5>
+                        <p class="card-text">50% OFF en ropa y calzado para caballeros. Lo mejor solo para ti.</p>
+                        <button class="btn btn-danger">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body text-center">
+                        <img src="./assets/images/922a27d77572d996b6600a889e3c27e5_1024_1024.webp" alt="Hogar y Decoración" class="img-fluid rounded mb-3" style="max-height: 240px; object-fit: contain;">
+                        <h5 class="card-title">Hogar y Decoración</h5>
+                        <p class="card-text">40% OFF en muebles y electrodomésticos. Añade a tu hogar con la mejor calidad en el mercado a un precio increible.</p>
+                        <button class="btn btn-danger">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- ------------------------------------------------------------------------------------------------------------------- -->
+    <!-- Ahora va la sección para suscribirse utilizando Bootstrap -->
+    <section id="subscripcion" class="py-5" style="background: var(--gradient-secondary); color: white;">
+        <div class="container text-center">
+            <h2 class="mb-3">Suscríbete a Nuestro Newsletter</h2>
+            <p class="mb-4">Y recibiras ofertas exclusivas directamente en tu email.</p>
+            <form class="row g-2 justify-content-center" id="subscripcion-form">
+                <div class="col-md-6">
+                    <input type="email" class="form-control" placeholder="Tu email aquí" required>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-light">Suscribirme</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+        <!-- ------------------------------------------------------------------------------------------------------------------- -->
+    <!-- Parte del Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Siman</h5>
+                    <p>Tu tienda de confianza desde 1950, dónde siempre encontrarás las mejores ofertas.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#promociones">Promociones</a></li>
+                        <li><a href="#subscripcion">Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contacto</h5>
+                    <p>📍 San Salvador, El Salvador</p>
+                    <p>📞 +503 2287-7641</p>
+                    <p>✉️ info@siman.com.sv</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Síguenos, no te arrepentiras</h5>
+                    <a href="#">Facebook</a><br>
+                    <a href="#">Instagram</a><br>
+                    <a href="#">X</a>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2025 Siman. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+        <!-- ------------------------------------------------------------------------------------------------------------------- -->
+    <!-- Sección de Scripts -->
+        <!-- Formulario de suscripción (simulado) -->
+    <script>
+        // 
+        document.getElementById('subscripcion-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            alert(`¡Gracias por suscribirte! Te hemos enviado un email a ${email}`);
+            this.reset();
+        });
+    </script>
+
+    <!-- Contador regresivo para el llamado de atención -->
+    <script>        
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            tomorrow.setHours(0, 0, 0, 0);
+            
+            const distance = tomorrow - now;
+            
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            const timer = document.getElementById('timer');
+            if (timer) {
+                timer.textContent = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            }
+            
+            if (distance < 0) {
+                timer.textContent = "¡Oferta Renovada!";
+                setTimeout(() => {
+                    updateCountdown();
+                }, 1000);
+            }
+        }
+
+        // Iniciar contador
+        updateCountdown();
+        setInterval(updateCountdown, 1000);     
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
